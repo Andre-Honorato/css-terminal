@@ -18,6 +18,7 @@ body.onkeydown = e => {
         let ultimaBarra = terminal.lastElementChild.querySelector('.barra')
         ultimaSeta.style.display = 'none'
         ultimaBarra.style.display = 'none'
+        ultimoTexto.style.marginRight = '20px'
         terminal.appendChild(linha)
         ultimoTexto = terminal.lastElementChild.querySelector('.texto p')
         ultimaSeta = terminal.lastElementChild.querySelector('.linha ion-icon')

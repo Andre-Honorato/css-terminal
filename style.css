@@ -54,7 +54,19 @@ main {
     /* height: 45%; */
     min-height: 45%;
     background-color: #262a33;
-    overflow-x: hidden;
+    overflow-x: auto;
+}
+
+.terminal::-webkit-scrollbar {
+    background-color: #1d1d1d;
+    width: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.terminal::-webkit-scrollbar-thumb {
+    background-color: #5b5b5b;
+    border-radius: 5px;
 }
 
 .verde {
