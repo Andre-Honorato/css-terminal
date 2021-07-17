@@ -24,10 +24,21 @@ body.onkeydown = e => {
             link = true
         }
         terminal.appendChild(linha)
+        ultimaSeta = terminal.lastElementChild.querySelector('.linha ion-icon')
         ultimoTexto = terminal.lastElementChild.querySelector('.texto p')
         if (link) {
+            ultimaSeta.style.display = 'none'
             ultimoTexto.innerHTML = "<a href='https://github.com/dedehlol/css-terminal' target='_blank'>https://github.com/dedehlol/css-terminal</a>"
             link = false
+            let linha = document.createElement('div')
+            linha.classList.add('linha')
+            linha.innerHTML = '<ion-icon name="arrow-forward"></ion-icon><span>~</span><div class="texto"><p></p></div><div class="barra"></div>'
+            let ultimaBarra = terminal.lastElementChild.querySelector('.barra')
+            ultimaBarra.style.display = 'none'
+            ultimoTexto.style.marginRight = '20px'
+            terminal.appendChild(linha)
+            ultimoTexto = terminal.lastElementChild.querySelector('.texto p')
+            ultimaSeta = terminal.lastElementChild.querySelector('.linha ion-icon')
         }
         ultimaSeta = terminal.lastElementChild.querySelector('.linha ion-icon')
     }
