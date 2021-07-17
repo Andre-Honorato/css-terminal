@@ -57,6 +57,10 @@ main {
     overflow-x: auto;
 }
 
+.terminal a {
+    color: dodgerblue;
+}
+
 .terminal::-webkit-scrollbar {
     background-color: #1d1d1d;
     width: 5px;
