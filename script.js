@@ -23,6 +23,12 @@ body.onkeydown = e => {
         if (ultimoTexto.innerHTML == 'github') {
             link = true
         }
+        else if (ultimoTexto.innerHTML == 'clear') {
+            let todasLinhas = document.querySelectorAll('.linha')
+            todasLinhas.forEach(linha => {
+                terminal.removeChild(linha)
+            })
+        }
         terminal.appendChild(linha)
         ultimaSeta = terminal.lastElementChild.querySelector('.linha ion-icon')
         ultimoTexto = terminal.lastElementChild.querySelector('.texto p')
