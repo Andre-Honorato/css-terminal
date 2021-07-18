@@ -3,4 +3,4 @@
 
 ### Projeto rodando: [CSS Terminal](https://css-terminal-dedehlol.netlify.app/ "CSS Terminal")
 
-###### Comandos disponíveis: github e clear
+###### Comandos disponíveis: github, clear e dedehlol
