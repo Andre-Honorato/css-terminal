@@ -29,6 +29,21 @@ body.onkeydown = e => {
                 terminal.removeChild(linha)
             })
         }
+        else if (ultimoTexto.innerHTML == 'dedehlol') {
+            let linha = document.createElement('div')
+            linha.classList.add('linha')
+            linha.innerHTML = '<ion-icon name="arrow-forward"></ion-icon><span>~</span><div class="texto"><p></p></div><div class="barra"></div>'
+            let ultimaBarra = terminal.lastElementChild.querySelector('.barra')
+            ultimaBarra.style.display = 'none'
+            ultimoTexto.style.marginRight = '20px'
+            terminal.appendChild(linha)
+            ultimoTexto = terminal.lastElementChild.querySelector('.texto p')
+            ultimoTexto.innerHTML = 'A really nice guy! 😃'
+            ultimaSeta = terminal.lastElementChild.querySelector('.linha ion-icon')
+            ultimaSeta.style.display = 'none'
+            ultimaBarra = terminal.lastElementChild.querySelector('.barra')
+            ultimaBarra.style.display = 'none'
+        }
         terminal.appendChild(linha)
         ultimaSeta = terminal.lastElementChild.querySelector('.linha ion-icon')
         ultimoTexto = terminal.lastElementChild.querySelector('.texto p')
