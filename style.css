@@ -12,15 +12,16 @@ body {
     grid-template-areas: 'main';
     height: 100vh;
     overflow-x: hidden;
+    background-color: #eee;
 }
 
 main {
     grid-area: main;
-    background-color: #eee;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: opening .3s ease;
 }
 
 .barra-superior {
@@ -134,5 +135,14 @@ main {
     }
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes opening {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
     }
 }
